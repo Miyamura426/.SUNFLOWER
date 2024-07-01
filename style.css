@@ -1,0 +1,61 @@
+body{
+    background-color: #000000;
+    color: white;
+}
+.container {
+    height: 10em;
+    width: 45em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    /* border-color: #f7f5f5; */
+}
+.container h1 {
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+    font-size: 7.3em;
+    position: absolute;
+    line-height: 0;
+    
+}
+.container img {
+    
+    position: absolute;
+    width: 25em;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    animation: spin 8s infinite linear, change 10s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+
+    }
+}
+@keyframes change {
+    10%{
+        filter: hue-rotate(50deg);
+    }
+    30%{
+        filter: hue-rotate(100deg);
+    }
+    50%{
+        filter: hue-rotate(150deg);
+    }
+    70%{
+        filter: hue-rotate(200deg);
+    }
+    85%{
+        filter: hue-rotate(250deg);
+    }
+    100%{
+        filter: hue-rotate(300deg);
+    }
+}
+
+.container h1:nth-child(3){
+    color: transparent;
+    -webkit-text-stroke: 3px #fff;
+}
